@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:web_project/view/home_Screen.dart';
 import 'package:web_project/view/welcome_screen.dart';
-import 'package:web_project/view/login_screen.dart';
+import 'package:web_project/view/login_Screen.dart';
 // import 'package:flutter';
 
 void main() {
