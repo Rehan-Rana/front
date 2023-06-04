@@ -1,7 +1,7 @@
 {
     "name": "web_project",
     "short_name": "web_project",
-    "start_url": ".",
+    "start_url": "https://testi.auth.us-east-1.amazoncognito.com/",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
