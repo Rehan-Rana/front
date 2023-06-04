@@ -44,10 +44,10 @@ class MyApp extends StatelessWidget {
             //   ),
             // ),
           ),
-          home: child,
+          home: LoginScreen(),
         );
       },
-      child: LoginScreen(),
+      child: const HomeScreen(),
     );
   }
 }
