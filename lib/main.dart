@@ -4,7 +4,23 @@ import 'package:get/get.dart';
 import 'package:web_project/view/home_Screen.dart';
 import 'package:web_project/view/welcome_screen.dart';
 import 'package:web_project/view/login_Screen.dart';
+import 'package:amplify_flutter/amplify.dart';
+import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
+
 // import 'package:flutter';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureAmplify(); // Initialize Amplify
+
+  runApp(const MyApp());
+}
+
+Future<void> configureAmplify() async {
+  final authPlugin = AmplifyAuthCognito();
+  await Amplify.addPlugins([authPlugin]);
+  await Amplify.configure(amplifyconfig);
+}
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
