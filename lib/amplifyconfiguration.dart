@@ -34,7 +34,6 @@ const amplifyconfig = ''' {
                 "phone",
                 "email",
                 "openid",
-                "profile",
                 "aws.cognito.signin.user.admin"
               ]
             }
