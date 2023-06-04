@@ -4,24 +4,13 @@ import 'package:get/get.dart';
 import 'package:web_project/view/home_Screen.dart';
 import 'package:web_project/view/welcome_screen.dart';
 import 'package:web_project/view/login_Screen.dart';
-import 'package:amplify_flutter/amplify.dart';
-import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
-import 'amplifyconfiguration.dart';
-
-
 // import 'package:flutter';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  await configureAmplify(); // Initialize Amplify
-
+  // Initialize without device test ids.
+  // Admob.initialize();
   runApp(const MyApp());
-}
-
-Future<void> configureAmplify() async {
-  final authPlugin = AmplifyAuthCognito();
-  await Amplify.addPlugins([authPlugin]);
-  await Amplify.configure(amplifyconfig);
 }
 
 class MyApp extends StatelessWidget {
@@ -55,7 +44,7 @@ class MyApp extends StatelessWidget {
             //   ),
             // ),
           ),
-          home: LoginScreen(),
+          home: LoginScreen,
         );
       },
       child: const HomeScreen(),
